@@ -39,20 +39,6 @@ public class ThreadPool {
 			}
 		}));
 		executor.shutdown();
-
-		/*for (int i = 0; i < 10; i++) {
-			executor.execute( () -> {
-				try {
-					TimeUnit.MILLISECONDS.sleep(300);
-					System.out.println("current thread name is " + Thread.currentThread().getName());
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			});
-
-		}
-		executor.shutdown();
-		*/
 	}
 
 	public static void submitMethodTest() {
